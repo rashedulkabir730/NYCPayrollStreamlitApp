@@ -24,7 +24,7 @@ bucket_name = 'payrolldatanyckabir'
 file_key = 'payroll.csv'
 
 
-@st.cache_data
+#@st.cache_data
 def load_data(file_key):
     # Get the file object from S3
     s3_object = s3_client.get_object(Bucket=bucket_name, Key=file_key)
