@@ -75,7 +75,23 @@ def per_hour(df):
 
 payroll = per_hour(payroll)
 
+columns_to_keep = [
+    'agency_name', 
+    'title_description', 
+    'start_year', 
+    'fiscal_year', 
+    'base_salary', 
+    'regular_hours', 
+    'years_worked', 
+    'pay_basis', 
+    'leave_status_as_of_june_30', 
+    'regular_gross_paid', 
+    'agency_start_date', 
+    'years_worked_cat'
+]
 
+# Drop other columns
+payroll = payroll[columns_to_keep]
 
 
 st.title('NYC Payroll Dashboard')
