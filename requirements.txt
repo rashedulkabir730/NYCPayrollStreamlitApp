@@ -1,4 +1,4 @@
 boto3
-plotly.express
+plotly-express
 python-dotenv
 streamlit
